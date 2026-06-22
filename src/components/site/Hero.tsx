@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Mail, ArrowRight, MapPin } from "lucide-react";
 import { FIRM, mailto, waLink } from "@/lib/firm";
+import heroChambers from "@/assets/hero-chambers.jpg";
 
 export function Hero() {
   return (
