@@ -76,17 +76,18 @@ function Home() {
       <Hero />
 
       {/* Trust bar */}
-      <section aria-label="Trust" className="border-y border-border bg-background">
-        <div className="container-prose grid grid-cols-2 gap-y-6 py-8 sm:grid-cols-4">
+      <section aria-label="Trust" className="relative border-y border-border bg-gradient-ivory">
+        <span aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+        <div className="container-prose grid grid-cols-2 gap-y-8 py-10 sm:grid-cols-4">
           {[
             { k: "Harare", v: "Belvedere chambers" },
             { k: "Multi-practice", v: "10 areas of law" },
             { k: "Direct access", v: "WhatsApp, email & phone" },
             { k: "Confidential", v: "Discreet consultations" },
-          ].map((t) => (
-            <div key={t.k} className="px-2 text-center">
+          ].map((t, i) => (
+            <div key={t.k} className={`px-2 text-center ${i > 0 ? "sm:border-l sm:border-gold/20" : ""}`}>
               <div className="font-serif text-lg text-navy-deep sm:text-xl">{t.k}</div>
-              <div className="mt-1 text-xs uppercase tracking-[0.15em] text-muted-foreground">
+              <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
                 {t.v}
               </div>
             </div>
