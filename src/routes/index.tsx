@@ -102,20 +102,21 @@ function Home() {
             <div className="relative">
               <div
                 aria-hidden
-                className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-gold/25 to-navy/10 blur-2xl"
+                className="absolute -inset-4 rounded-3xl bg-gradient-gold opacity-25 blur-3xl"
               />
-              <div className="relative overflow-hidden rounded-2xl shadow-elegant ring-1 ring-navy/10">
+              <div className="relative overflow-hidden rounded-2xl shadow-elegant ring-1 ring-gold/30">
                 <img
                   src={aboutScales}
                   alt="Brass scales of justice resting on antique leather-bound law books"
                   width={1280}
                   height={1024}
                   loading="lazy"
-                  className="h-[360px] w-full object-cover sm:h-[460px]"
+                  className="h-[320px] w-full object-cover sm:h-[460px]"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/40 via-transparent to-transparent" />
               </div>
-              <div className="absolute -bottom-6 -right-6 hidden rounded-xl border border-gold/40 bg-ivory px-5 py-4 text-navy-deep shadow-soft sm:block">
-                <div className="text-[10px] uppercase tracking-[0.22em] text-gold">Est. Harare</div>
+              <div className="absolute -bottom-5 left-4 right-4 rounded-xl border border-gold/40 bg-gradient-ivory px-5 py-4 text-navy-deep shadow-elegant sm:-bottom-6 sm:right-auto sm:left-auto sm:-right-6">
+                <div className="text-[10px] uppercase tracking-[0.22em] text-gold-deep">Est. Harare</div>
                 <div className="font-serif text-lg">Belvedere Chambers</div>
               </div>
             </div>
