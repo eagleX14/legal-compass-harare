@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
-  base: "/legal-compass-harare/",
+  base: "/machaya-associates/",
   server: {
     host: "::",
     port: 8080,
